@@ -32,6 +32,25 @@ class NFCTableViewController: UITableViewController {
     self.nfcSession = NFCNDEFReaderSession(delegate: self, queue: DispatchQueue.main, invalidateAfterFirstRead: false)
   }
   
+  class func formattedTypeNameFormat(from typeNameFormat: NFCTypeNameFormat) -> String {
+    switch typeNameFormat {
+    case .empty:
+      return "Empty"
+    case .nfcWellKnown:
+      return "NFC Well Known"
+    case .media:
+      return "Media"
+    case .absoluteURI:
+      return "Absolute URI"
+    case .nfcExternal:
+      return "NFC External"
+    case .unchanged:
+      return "Unchanged"
+    default:
+      return "Unknown"
+    }
+  }
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
@@ -55,6 +74,19 @@ class NFCTableViewController: UITableViewController {
     // Configure the cell...
     
     return cell
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let nfcTag = self.nfcMessages[indexPath.section][indexPath.row]
+    let records = nfcTag.records.map({ String(describing: String(data: $0.payload, encoding: .utf8)!) })
+    
+    let alertTitle = " \(nfcTag.records.count) Records found in Message"
+    let alert = UIAlertController(title: alertTitle, message: records.joined(separator: "\n"), preferredStyle: .alert)
+    
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    
+    self.present(alert, animated: true, completion: nil)
+    self.tableView.deselectRow(at: indexPath, animated: true)
   }
   
 }
