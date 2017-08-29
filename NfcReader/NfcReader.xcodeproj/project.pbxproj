@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AB0B684D1F556FAC004A7DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B684C1F556FAC004A7DB0 /* AppDelegate.swift */; };
-		AB0B684F1F556FAC004A7DB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B684E1F556FAC004A7DB0 /* ViewController.swift */; };
 		AB0B68521F556FAC004A7DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0B68501F556FAC004A7DB0 /* Main.storyboard */; };
 		AB0B68541F556FAC004A7DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0B68531F556FAC004A7DB0 /* Assets.xcassets */; };
 		AB0B68571F556FAC004A7DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0B68551F556FAC004A7DB0 /* LaunchScreen.storyboard */; };
 		AB0B68621F556FAC004A7DB0 /* NfcReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B68611F556FAC004A7DB0 /* NfcReaderTests.swift */; };
+		AB0B686E1F557404004A7DB0 /* NFCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B686D1F557404004A7DB0 /* NFCTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		AB0B68491F556FAC004A7DB0 /* NfcReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NfcReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0B684C1F556FAC004A7DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB0B684E1F556FAC004A7DB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB0B68511F556FAC004A7DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB0B68531F556FAC004A7DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB0B68561F556FAC004A7DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		AB0B68611F556FAC004A7DB0 /* NfcReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcReaderTests.swift; sourceTree = "<group>"; };
 		AB0B68631F556FAC004A7DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB0B686C1F556FDA004A7DB0 /* NfcReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NfcReader.entitlements; sourceTree = "<group>"; };
+		AB0B686D1F557404004A7DB0 /* NFCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			children = (
 				AB0B686C1F556FDA004A7DB0 /* NfcReader.entitlements */,
 				AB0B684C1F556FAC004A7DB0 /* AppDelegate.swift */,
-				AB0B684E1F556FAC004A7DB0 /* ViewController.swift */,
+				AB0B686D1F557404004A7DB0 /* NFCTableViewController.swift */,
 				AB0B68501F556FAC004A7DB0 /* Main.storyboard */,
 				AB0B68531F556FAC004A7DB0 /* Assets.xcassets */,
 				AB0B68551F556FAC004A7DB0 /* LaunchScreen.storyboard */,
@@ -204,8 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0B684F1F556FAC004A7DB0 /* ViewController.swift in Sources */,
 				AB0B684D1F556FAC004A7DB0 /* AppDelegate.swift in Sources */,
+				AB0B686E1F557404004A7DB0 /* NFCTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
