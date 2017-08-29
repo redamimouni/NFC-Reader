@@ -13,6 +13,7 @@
 		AB0B68571F556FAC004A7DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0B68551F556FAC004A7DB0 /* LaunchScreen.storyboard */; };
 		AB0B68621F556FAC004A7DB0 /* NfcReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B68611F556FAC004A7DB0 /* NfcReaderTests.swift */; };
 		AB0B686E1F557404004A7DB0 /* NFCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B686D1F557404004A7DB0 /* NFCTableViewController.swift */; };
+		AB0B68701F557582004A7DB0 /* NFCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0B686F1F557582004A7DB0 /* NFCTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		AB0B68631F556FAC004A7DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB0B686C1F556FDA004A7DB0 /* NfcReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NfcReader.entitlements; sourceTree = "<group>"; };
 		AB0B686D1F557404004A7DB0 /* NFCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTableViewController.swift; sourceTree = "<group>"; };
+		AB0B686F1F557582004A7DB0 /* NFCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				AB0B686C1F556FDA004A7DB0 /* NfcReader.entitlements */,
 				AB0B684C1F556FAC004A7DB0 /* AppDelegate.swift */,
 				AB0B686D1F557404004A7DB0 /* NFCTableViewController.swift */,
+				AB0B686F1F557582004A7DB0 /* NFCTableViewCell.swift */,
 				AB0B68501F556FAC004A7DB0 /* Main.storyboard */,
 				AB0B68531F556FAC004A7DB0 /* Assets.xcassets */,
 				AB0B68551F556FAC004A7DB0 /* LaunchScreen.storyboard */,
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0B68701F557582004A7DB0 /* NFCTableViewCell.swift in Sources */,
 				AB0B684D1F556FAC004A7DB0 /* AppDelegate.swift in Sources */,
 				AB0B686E1F557404004A7DB0 /* NFCTableViewController.swift in Sources */,
 			);
