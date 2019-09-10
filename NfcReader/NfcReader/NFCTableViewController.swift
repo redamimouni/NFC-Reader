@@ -13,7 +13,7 @@ class NFCTableViewController: UITableViewController {
   
   // Referencie les messages reçus
   private var nfcMessages: [[NFCNDEFMessage]] = []
-         
+       
   @IBAction func startNFCSearchButtonTapped(_ sender: Any) {
     var nfcSession: NFCNDEFReaderSession!
     // Créer la session de lecture NFC au moment où l’utilisateur clique sur le bouton
