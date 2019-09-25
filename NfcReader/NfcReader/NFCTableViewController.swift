@@ -108,7 +108,7 @@ extension NFCTableViewController : NFCNDEFReaderSessionDelegate {
   // Appler lorcequ'on arrive à scanner des messages NDEF
   func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
     print("New NFC Message (\(messages.count)) detected:")
-    
+       
     for message in messages {
       print(" - \(message.records.count) Records:")
       for record in message.records {
