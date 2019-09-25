@@ -5,7 +5,7 @@
 //  Created by Reda Mimouni on 29/08/2017.
 //  Copyright © 2017 Reda Mimouni. All rights reserved.
 //
-
+     
 import UIKit
 
 class NFCTableViewCell: UITableViewCell {
