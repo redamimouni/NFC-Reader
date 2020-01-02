@@ -104,7 +104,7 @@ extension NFCTableViewController : NFCNDEFReaderSessionDelegate {
   func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
     print("NFC-Session invalidated: \(error.localizedDescription)")
   }
-  
+    
   // Appler lorcequ'on arrive à scanner des messages NDEF
   func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
     print("New NFC Message (\(messages.count)) detected:")
